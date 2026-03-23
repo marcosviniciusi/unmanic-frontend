@@ -141,9 +141,8 @@ const checkAndShow = async () => {
   try {
     // 1. Get Session Level
     const session = await unmanicGlobals.getUnmanicSession()
-    if (session.level !== 9) {
-      return // Not a trial user
-    }
+    // Trial dialog disabled in this fork
+    return
 
     // 2. Get Settings to check if already viewed
     const response = await axios.get(getUnmanicApiUrl('v2', 'settings/read'))

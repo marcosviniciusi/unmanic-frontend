@@ -69,7 +69,7 @@ export default {
           $unmanic[cacheKey] = {
             created: response.data.created,
             email: response.data.email,
-            level: response.data.level,
+            level: 7, // Always full supporter in this fork
             name: response.data.name,
             picture_uri: response.data.picture_uri,
             uuid: response.data.uuid,

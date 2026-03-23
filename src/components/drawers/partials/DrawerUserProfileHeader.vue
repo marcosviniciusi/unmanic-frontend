@@ -24,7 +24,7 @@
       <!-- SUPPORT BUTTON -->
       <div class="absolute-bottom bg-transparent">
         <div
-          v-if="unmanicSession === null || unmanicSession.level < 2"
+          v-if="false"
           class="float-right q-pr-md">
           <q-btn
             @click="supportProject()"
